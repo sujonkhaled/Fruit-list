@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Lab 1</title>
+    <script>
+      function addFruit() {
+        alert("Please disable this alert and implement add fruit function!");
+      }
+
+      function deleteFruit(row) {
+        alert("Please disable this alert and implement delete fruit function! - " + row.id);
+      }
+    </script>
+  </head>
+  <body>
+    <table border="1" width="480" id="FruitList">
+      <tr>
+        <th>Fruit Name</th>
+        <th>Operation</th>
+      </tr>
+      <tr id="Apple">
+        <td>Apple</td>
+        <td align="center">
+          <a href="#" onclick="deleteFruit(this.parentNode.parentNode);">Delete</a>
+        </td>
+      </tr>
+      <tr id="Lemon">
+        <td>Lemon</td>
+        <td align="center">
+          <a href="#" onclick="deleteFruit(this.parentNode.parentNode);">Delete</a>
+        </td>
+      </tr>
+      <tr id="InputRow">
+        <td><input type="text" id="fruit_name"></td>
+        <td align="center"><input type="button" onclick="addFruit();" value="Add"></td>
+      </tr>
+    </table>
+    <pre>
+    <b>Group Members:</b>
+    1. KHALED MAHMUD SUJON
+       ( A20EC4082 )
+    2. Labib 
+    </pre>
+<script src="index.js"></script>
+
+  </body>
+</html>
